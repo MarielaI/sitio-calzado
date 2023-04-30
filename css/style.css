@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(229, 227, 227);
+}
+
+.menu {
+    border-color: rgb(16, 13, 13);
+    border-style: solid;
+    border-color: grey;
+    margin-bottom: 5px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.contenido {
+    color: rgb(8, 41, 30);
+    justify-content: space-around;
+    display: flex;
+    background-color: beige;
+    border-style: solid;
+    border-color: grey;
+    margin-bottom: 5px;
+    height: 400px;
+    justify-content: space-around;
+}
+
+.izquierda {
+    width: 30%;
+    border-color: grey;
+    border-style: solid;
+    margin: 1%;
+    margin-right: 0%;
+    background-image: url(../img/1.jpg);
+}
+.centro {
+    width: 30%;
+    border-color: grey;
+    border-style: solid;
+    margin: 3%;
+    background-image: url(../img/2.jpg);
+    margin: 1%;
+    margin-right: 0%;
+}
+.derecha {
+    width: 30%;
+    border-color: grey;
+    border-style: solid;
+    margin: 1%;
+    background-image: url(../img/3.jpg);
+}
+
+.servicios {
+    display: flex;
+    border-color: grey;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
