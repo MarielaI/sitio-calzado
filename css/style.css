@@ -1,9 +1,18 @@
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #834e4e;
+    font-style: italic;
+}
 body {
     background-color: rgb(229, 227, 227);
 }
 
 .menu {
-    height: 40px;
+    height: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
    }
 
 .menu ul {
@@ -151,4 +160,18 @@ th {
     font-size: medium;
     text-align:justify;
     color: #834e4e;
+}
+#text_form{
+    border-bottom: solid;
+    border-color: darkgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: small;
+    font-style: italic;
+    color:gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#submit_form{
+     border: none;
 }
