@@ -1,11 +1,12 @@
-h1{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     color: #834e4e;
     font-style: italic;
 }
+
 body {
-    background-color: rgb(229, 227, 227);
+    background-color: rgb(223, 221, 221);
 }
 
 .menu {
@@ -13,7 +14,11 @@ body {
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 10px;
-   }
+    /*esto le agregue yo*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
 
 .menu ul {
     display: flex;
@@ -27,9 +32,14 @@ body {
     color: rgb(8, 41, 30);
     justify-content: space-around;
     display: flex;
-    background-color: beige;
+    background-color: aliceblue;
     height: 400px;
     justify-content: space-around;
+    /*lo nuevo*/
+    font-size: smaller;
+    font-weight: lighter;
+    text-align: left;
+    border-style: none;
 }
 
 p {
@@ -43,15 +53,20 @@ p {
     margin: 1%;
     margin-right: 0%;
     background-image: url(../img/1.jpg);
-    
     display: flex;
+    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
+    text-align: right, top;
+    border-radius: 10px;
+    border-style: none;
+    background-size: cover;
+    background-position: center;
 }
 
 a {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:xx-large;
-    color:beige;
+    font-size: xx-large;
+    color: beige;
     text-align: end;
 }
 
@@ -61,12 +76,25 @@ a {
     background-image: url(../img/2.jpg);
     margin: 1%;
     margin-right: 0%;
+    display: flex;
+    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
+    text-align: right, top;
+    border-radius: 10px;
+    border-style: none;
+    background-size: cover;
+    background-position: left;
 }
 
 .derecha {
     width: 30%;
     margin: 1%;
     background-image: url(../img/3.jpg);
+    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
+    text-align: right, top;
+    border-radius: 10px;
+    border-style: none;
+    background-size: cover;
+    background-position: center;
 }
 
 .servicios {
@@ -80,6 +108,11 @@ a {
     justify-content: space-around;
     list-style: none;
     font-size: medium;
+    /*lo nuevo cambie tipografias para que sea similar a las del nav*/
+    vertical-align: middle;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-style: italic;
 }
 
 a {
@@ -91,87 +124,137 @@ table,
 th,
 td,
 tr {
-    width: 18%;
-    border: 1px solid black;
+    width: 20%;
+    height: auto;
+    border: 1px solid rgb(28, 28, 28);
     border-collapse: collapse;
     text-align: center;
+    /*agrande la tabla y la centre en el sitio web*/
+    margin: auto;
+    align-content: space-around;
+   
+    
+    
 }
 
 th {
     background-color: rgb(236, 191, 191);
-    }
+    
+}
 
 .imagen_producto {
     background-image: url(../img/producto.jpg);
     display: flex;
     height: 330px;
     width: 32%;
+    /*lo nuevo(centre imagen y modifique detalles)*/
+    background-position: center;
+    background-size: cover;
 }
-.tabla{
-    background-color: brown;
+
+.tabla {
+    background-color: #834e4e;
     width: 8%;
     margin-bottom: 0px;
-    }
-.producto{
+    /*agregue esto a la tabla (modifique el color y la tipografia)*/
+    border-radius: 3px;
+}
+
+.producto {
     display: flex;
-    }
-.desc_producto{
+}
+
+.desc_producto {
     width: 30%;
     background-color: aliceblue;
     padding-left: 10px;
     padding-right: 10px;
-   padding-bottom: 10px;
-  }
-#nombre{
+    padding-bottom: 10px;
+}
+
+#nombre {
     color: #834e4e;
     font-size: 22px;
     height: 20px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /*lo nuevo cambie la alineacion y el flex*/
+    display: flex;
+    align-content: space-around;
+    vertical-align: middle;
 }
-#boton_comprar{
+
+#boton_comprar {
     background-color: #834e4e;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /*nuevo*/
+    border-radius: 5px;
+
 }
-#p_producto{
+
+#p_producto {
     color: #834e4e;
     font-size: 16px;
-    text-align:justify;
+    text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-.nombre{
+}
+
+.nombre {
     margin-bottom: 20px;
 }
-.boton_comprar{
+
+.boton_comprar {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.tabla_p{
-    background-color: brown;
-    width: 27%; 
-   }
-#form{
+
+.tabla_p {
+    background-color: #834e4e;
+    width: 27%;
+    /*nuevo*/
+    border-radius: 3px;
+}
+
+#form {
     margin-top: 0px;
     display: flex;
     justify-content: end;
+    /*nuevo*/
+    
 }
-#p_form{
+
+#p_form {
     font-size: medium;
-    text-align:justify;
+    text-align: justify;
     color: #834e4e;
+    /*nuevo*/
+    font-weight: bold;
+
+   
 }
-#text_form{
+
+#text_form {
+    
     border-bottom: solid;
-    border-color: darkgray;
+    border-color: rgb(239, 239, 239);
     border-top: none;
     border-left: none;
     border-right: none;
-    font-size: small;
+    font-size: medium;
     font-style: italic;
-    color:gray;
+    color: gray;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /*nuevo*/
+    border-radius: 5px;
 }
-#submit_form{
-     border: none;
+
+#submit_form {
+    /*le agregue detalles y color al boton*/
+    
+    background-color: rgb(239, 239, 239);
+    border: solid, rgb(47, 47, 47), 2px;
+    border-radius: 3px;
+    align-items: center;
+    text-align: center;
 }
