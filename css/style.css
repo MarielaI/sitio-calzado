@@ -4,44 +4,44 @@ h1 {
     color: #834e4e;
     font-style: italic;
 }
+
 h2 {
     font-size: medium;
-     color: #834e4e;
+    color: #834e4e;
     font-weight: bold;
     text-align: right;
 }
+
 body {
     background-color: rgb(223, 221, 221);
 }
-a h1{
+
+a h1 {
     text-align: left;
 }
+
 .menu {
     height: 15px;
-    margin-top: 0px;
-    padding-top: 0px;
     padding-bottom: 10px;
-    /*esto le agregue yo*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: medium;
     font-style: italic;
-    border-bottom:solid; 
+    border-bottom: solid;
     border-color: rgb(169, 169, 169);
     border-width: 2px;
-    }
+}
 
-.loguin{
+.loguin {
     display: flex;
     width: 15%;
     margin-left: 85%;
-    }
+}
 
 .menu ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
     font-size: large;
-    vertical-align: middle;
+
 }
 
 .contenido {
@@ -49,10 +49,7 @@ a h1{
     display: flex;
     background-color: aliceblue;
     height: 400px;
-    justify-content: space-around;
-    /*lo nuevo*/
-    font-size: smaller;
-    font-weight: lighter;
+    font-size: smaller, lighter;
     text-align: left;
     border-style: none;
 }
@@ -63,59 +60,39 @@ p {
     color: aliceblue;
 }
 
-.izquierda {
+.izquierda,
+.centro,
+.derecha {
     width: 30%;
     margin: 1%;
-    margin-right: 0%;
-    background-image: url(../img/1.jpg);
     display: flex;
-    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
-    text-align: right, top;
     border-radius: 10px;
     border-style: none;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     padding-left: 7px;
+
+}
+
+.izquierda {
+    background-image: url(../img/1.jpg);
+}
+
+.centro {
+    background-image: url(../img/2.jpg);
+}
+
+.derecha {
+    background-image: url(../img/3.jpg);
 }
 
 a {
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    color: beige;
-    text-align: end;
     font-size: small;
-    margin-left: 10px;
-}
-
-.centro {
-    width: 30%;
-    margin: 3%;
-    background-image: url(../img/2.jpg);
-    margin: 1%;
-    margin-right: 0%;
-    display: flex;
-    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
-    text-align: right, top;
-    border-radius: 10px;
-    border-style: none;
-    background-size: cover;
-    background-position: left;
-    padding-left: 7px;
-}
-
-.derecha {
-    width: 30%;
-    margin: 1%;
-    background-image: url(../img/3.jpg);
-    /*lo nuevo (centre las imagenes y le agregue bordes redondos)*/
-    text-align: right, top;
-    border-radius: 10px;
-    border-style: none;
-    background-size: cover;
-    background-position: center;
-    padding-left: 7px;
-}
+    color: beige;
+    text-align:center;
+    }
 
 .servicios {
     border-top: solid;
@@ -127,12 +104,11 @@ a {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: medium;
-    /*lo nuevo cambie tipografias para que sea similar a las del nav*/
     vertical-align: middle;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
     font-style: italic;
+
 }
 
 table,
@@ -140,66 +116,70 @@ th,
 td,
 tr {
     width: 23%;
-    height: auto;
     border: 1px solid rgb(28, 28, 28);
     border-collapse: collapse;
     text-align: center;
-    /*agrande la tabla y la centre en el sitio web*/
-    margin: auto;
-          
+    margin:auto;
 }
 
 th {
     background-color: rgb(236, 191, 191);
-    }
+}
 
 .imagen_producto {
     background-image: url(../img/producto.jpg);
     display: flex;
     height: 330px;
     width: 100%;
-    /*lo nuevo(centre imagen y modifique detalles)*/
     background-position: center;
     background-size: cover;
+    
 }
-.div_tabla{
+
+.div_tabla {
     margin-top: 30px;
-}
+    margin-bottom: 30px;
+    }
+
 .tabla {
+    display: flex;
     background-color: #834e4e;
     width: 8%;
-    margin-bottom: 0px;
-    /*agregue esto a la tabla (modifique el color y la tipografia)*/
     border-radius: 3px;
-    }
+    justify-content: center;
+}
 
 .producto {
     display: flex;
+    margin-left: 210px;
     padding: 10px;
     background-color: aliceblue;
     width: 50%;
     margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .desc_producto {
     background-color: aliceblue;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-.div_boton_compra {
-    height: 30px;
+    padding: 0px 10px  0px 10px;
+   
 }
-#nombre {
+
+.div_boton_compra {
+    height: 50px;
+}
+
+p.nombre_prod {
     color: #834e4e;
     font-size: 22px;
     height: 10px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /*lo nuevo cambie la alineacion y el flex*/
-    display: flex;
+  display: flex;
     align-content: space-around;
     vertical-align: middle;
-    }
+}
 
 .boton_comprar {
     display: flex;
@@ -207,16 +187,16 @@ th {
     background-color: #834e4e;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:aliceblue;
-    /*nuevo*/
+    color: aliceblue;
     border-radius: 5px;
     height: 40px;
     width: 100px;
-    padding-top: 11px;
-    padding-left: 12px;
-    }
+    padding: 11px 0px 0px 12px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
-#p_producto {
+.p_producto {
     color: #834e4e;
     font-size: 16px;
     text-align: justify;
@@ -227,30 +207,30 @@ th {
     margin-bottom: 5px;
 }
 
-.boton_comprar {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
 .tabla_p {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    margin: auto;
     background-color: #834e4e;
-    width: 33%;
-    /*nuevo*/
+    width: 35%;
+   height: 18px;
     border-radius: 3px;
+    
 }
 
 .form {
     margin-top: 0px;
     display: flex;
     justify-content: end;
-    }
+}
 
 .p_form {
     font-size: medium;
     text-align: justify;
     color: #834e4e;
     /*nuevo*/
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .text_form {
@@ -275,22 +255,22 @@ th {
     align-items: center;
     text-align: center;
 }
-.form_sesion{
+
+.form_sesion {
     width: 70%;
     margin: auto;
-    }
+    margin-bottom: 30px;
+}
 
 form p {
     color: #834e4e;
     font-size: small;
     font-family: Georgia, 'Times New Roman', Times, serif;
-   }
-.sesion{
+}
+
+.sesion {
     font-size: small;
     text-align: justify;
     color: #834e4e;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /*nuevo*/
 }
-
-
