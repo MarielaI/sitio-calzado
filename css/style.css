@@ -6,10 +6,10 @@ h1 {
 }
 
 h2 {
-    font-size: medium;
+    font-size: large;
     color: #834e4e;
     font-weight: bold;
-    text-align: right;
+    
 }
 
 body {
@@ -33,7 +33,7 @@ a h1 {
 .loguin {
     display: flex;
     width: 15%;
-    margin-left: 85%;
+    margin-left: 90%;
 }
 
 .menu ul {
@@ -88,11 +88,10 @@ p {
 
 a {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
+    font-family: small Georgia, 'Times New Roman', Times, serif;
     color: beige;
-    text-align:center;
-    }
+    text-align: center;
+}
 
 .servicios {
     border-top: solid;
@@ -104,11 +103,8 @@ a {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    vertical-align: middle;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: medium;
+    font-family: medium system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
-
 }
 
 table,
@@ -119,7 +115,7 @@ tr {
     border: 1px solid rgb(28, 28, 28);
     border-collapse: collapse;
     text-align: center;
-    margin:auto;
+    margin: auto;
 }
 
 th {
@@ -133,37 +129,38 @@ th {
     width: 100%;
     background-position: center;
     background-size: cover;
-    
 }
 
 .div_tabla {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    }
+    margin: 30px 0px 30px 400px;
+    background-color: aliceblue;
+    padding: 10px 0px 10px 0px;
+    width: 40%;
+    border-radius: 13px;
+}
 
 .tabla {
     display: flex;
     background-color: #834e4e;
     width: 8%;
-    border-radius: 3px;
     justify-content: center;
 }
 
 .producto {
     display: flex;
-    margin-left: 210px;
     padding: 10px;
     background-color: aliceblue;
     width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 210px;
     border-radius: 10px;
 }
 
 .desc_producto {
     background-color: aliceblue;
-    padding: 0px 10px  0px 10px;
-   
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .div_boton_compra {
@@ -172,18 +169,14 @@ th {
 
 p.nombre_prod {
     color: #834e4e;
-    font-size: 22px;
     height: 10px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  display: flex;
-    align-content: space-around;
-    vertical-align: middle;
+    font: 22px Georgia, 'Times New Roman', Times, serif;
+    display: flex;
 }
 
 .boton_comprar {
     display: flex;
-    margin: auto;
     background-color: #834e4e;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -192,8 +185,7 @@ p.nombre_prod {
     height: 40px;
     width: 100px;
     padding: 11px 0px 0px 12px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: auto;
 }
 
 .p_producto {
@@ -204,23 +196,21 @@ p.nombre_prod {
 }
 
 .nombre {
-    margin-bottom: 5px;
+    margin-bottom: 70px;
 }
 
 .tabla_p {
     display: flex;
     justify-content: center;
-    padding-top: 8px;
     margin: auto;
+    padding-bottom: 5px;
     background-color: #834e4e;
-    width: 35%;
-   height: 18px;
+    width: 45%;
+    height: 15px;
     border-radius: 3px;
-    
 }
 
 .form {
-    margin-top: 0px;
     display: flex;
     justify-content: end;
 }
@@ -229,35 +219,27 @@ p.nombre_prod {
     font-size: medium;
     text-align: justify;
     color: #834e4e;
-    /*nuevo*/
     font-weight: bold;
 }
 
 .text_form {
-    border-bottom: solid;
-    border-color: rgb(239, 239, 239);
     border-top: none;
     border-left: none;
     border-right: none;
-    font-size: medium;
-    font-style: italic;
     color: gray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    /*nuevo*/
+    font: medium Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
     border-radius: 5px;
 }
 
 .submit_form {
-    /*le agregue detalles y color al boton*/
     background-color: rgb(239, 239, 239);
     border: solid, rgb(47, 47, 47), 2px;
     border-radius: 3px;
-    align-items: center;
-    text-align: center;
 }
 
 .form_sesion {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-bottom: 30px;
 }
